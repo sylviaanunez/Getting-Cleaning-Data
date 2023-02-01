@@ -56,5 +56,5 @@ tidyDataset <- reducedSet %>% group_by(activity, subject) %>%
 
 write.table(tidyDataset, file = "tidyDataset.txt", row.names = FALSE)
 
-validate <- read.table("tidyDataset.txt")
+tidyDataset <- read.table("tidyDataset.txt")
 View(validate)
